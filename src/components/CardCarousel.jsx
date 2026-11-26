@@ -16,12 +16,12 @@ export default function CardCarousel({ blok }) {
       {...storyblokEditable(blok)}
       className="container mx-auto px-14 py-12"
     >
+      <h2 className="text-black">{blok.title}</h2>
       <Carousel
         opts={{ align: "start", loop: true }}
         className="w-full"
       >
         <CarouselContent className="-ml-4">
-          {blok.title}
           {blok.cards?.map((nestedBlok) => (
             <CarouselItem
               key={nestedBlok._uid}
