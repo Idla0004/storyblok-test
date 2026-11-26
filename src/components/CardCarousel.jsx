@@ -21,6 +21,7 @@ export default function CardCarousel({ blok }) {
         className="w-full"
       >
         <CarouselContent className="-ml-4">
+          {blok.title}
           {blok.cards?.map((nestedBlok) => (
             <CarouselItem
               key={nestedBlok._uid}
