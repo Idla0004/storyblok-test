@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev --experimental-https",
-    "vercel-build": "npm run prepare && next build",
     "build": "next build",
     "start": "next start"
   },
